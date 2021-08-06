@@ -30,7 +30,7 @@ client.on('message', (msg) => {
 		console.log(error);
 	}
 	switch (true) {
-		case BAN_LIST.find((tag) => tag === msg.author.discriminator): {
+		case msg.author.discriminator === process.env.BAN: {
 			msg.channel.send('==');
 			break;
 		}
