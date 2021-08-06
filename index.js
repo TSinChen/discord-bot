@@ -6,6 +6,7 @@ import * as constants from './constants.js';
 import { isStartWith } from './utils.js';
 
 dotenv.config();
+
 const client = new Discord.Client();
 client.login(process.env.TOKEN);
 
