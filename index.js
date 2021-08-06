@@ -4,7 +4,6 @@ import dotenv from 'dotenv';
 
 import * as constants from './constants.js';
 import { isStartWith } from './utils.js';
-import BAN_LIST from './banList.js';
 
 dotenv.config();
 const client = new Discord.Client();
